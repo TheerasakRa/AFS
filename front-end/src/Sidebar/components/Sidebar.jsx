@@ -73,6 +73,7 @@ const Sidebar = ({children}) => {
                    </h1>
                    <div style={{marginLeft: isOpen ? "1px" : "-40px"}} className="bars">
                        <FaBars onClick={toggle}/>
+                    
                    </div>
                </div>
                {
