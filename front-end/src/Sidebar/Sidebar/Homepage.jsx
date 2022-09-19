@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Weather from "../../Weather/Weather.js";
 
 const Homepage = () => {
     return (
-            <div className="flex pl-96 ">    
-                    <h1 className='text-4xl pl-56 mt-5'>Homepage</h1>
-                    <div className=''>
-
+            <div className="pl-96 ">    
+                    <h1 className='text-4xl mt-5'>Homepage</h1>
+                    <div className='weather pt-4'>
+                    <Weather />
                     </div>
         </div>
     );

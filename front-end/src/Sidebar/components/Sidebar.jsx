@@ -59,7 +59,7 @@ const Sidebar = ({children}) => {
         },
         {
             path:"/logout",
-            name:"Login",
+            name:"Logout",
             icon:<RiLogoutCircleLine class="icons mt-1"/>
         }
 

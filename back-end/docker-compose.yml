@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: 'mysql:8.0'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: meta01
+      MYSQL_USER: alphag5
+      MYSQL_PASSWORD: 02014
+      MYSQL_DATABASE: ai_farm_stay
+    ports:
+      - "3000:3306"
+    volumes:
+      - "./database/data:/var/lib/mysql"

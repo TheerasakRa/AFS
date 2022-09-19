@@ -12,13 +12,7 @@ const Notes = () => {
 			text: 'Carrot',
 			date: '15/04/2021',
 		},
-		{
-			id: nanoid(),
-			text: 'Apple',
-			date: '15/04/2021',
-		},
 
-	
 	]);
 
 	const [searchText, setSearchText] = useState('');
