@@ -1,10 +1,11 @@
 import React from 'react';
+
 const Comunityonline = () => {
     return (
-        <div class="justify-center ml-72">
+        <div class="justify-center">
             
         <div className="">    
-                <h1 className='text-3xl pl-60 mt-5'>Comunity Online</h1>
+                <h1 className='text-3xl mt-5'>Comunity Online</h1>
                 
         </div>
         </div>

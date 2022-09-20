@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../Image/Logo.png'
+import Logo from '../../image/Logo.png'
 import {
     FaBars,
     FaShoppingBag,
