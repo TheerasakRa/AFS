@@ -23,7 +23,7 @@ function Circlemenu() {
                     <img src="https://cdn-icons-png.flaticon.com/512/3790/3790171.png" 
                     alt="Note Pad" width="400" height="600"/>  
                 </a>
-                <a href="#" class="menu-item white"> 
+                <a href="/search" class="menu-item white"> 
                 <img src="https://cdn-icons-png.flaticon.com/512/3442/3442662.png" 
                     alt="Area" width="500" height="600"/>  
                     </a>

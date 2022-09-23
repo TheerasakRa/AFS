@@ -11,7 +11,7 @@ import Logout from '../pages/Logout.js';
 import Equipment from '../pages/Equipment.js';
 import ProductList from '../pages/ProductList.js';
 import Notes from '../data/notepad/Notes';
-
+import Searchplants from '../data/searchplants/Searchplants';
 
 
 const Router = () => {
@@ -30,7 +30,7 @@ const Router = () => {
           <Route path="/equipment" element={<Equipment />} />
           <Route path="/productList" element={<ProductList />} />
           <Route path="/notes" element={<Notes />} />
-
+          <Route path="/search" element={<Searchplants />} />
     
         </Routes>
       </Sidebar>

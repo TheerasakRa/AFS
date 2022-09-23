@@ -1,15 +1,13 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Button,Card,CardMedia,CardContent,Typography,CardActions,Grid,Container } from "@mui/material";
-import Searchplants from "../data/searchplants/Searchplants";
 
 
 const apiURL = "http://localhost:8050/"
 
 function Introduceplants() {
-
     const [post, setPost] = useState([]);
-    
+
     useEffect(() => {
         axios.get(apiURL).then((response) => {
             setPost(response.data);
@@ -19,15 +17,14 @@ function Introduceplants() {
 
     if (!post) return "no post";
 
-
     return (
         <div>
             <div className=" ">
+                <p className='flex justify-center text-4xl font-medium mt-5 mb-5'>Introduceplants</p>        
                 
-                <p className='flex justify-center text-4xl font-medium mt-5 mb-5'>Introduceplants</p>
-                <p><Searchplants /></p>
                 
-
+                
+                <div className="container">
                 <Container maxWidth="lg" className="mt-5 overflow-y-auto max-h-[35rem] ">
                     <Grid container spacing={2}>
                         {post.map(e => (
@@ -62,7 +59,7 @@ function Introduceplants() {
                     </Grid>
                 </Container>
 
-
+                </div>
             </div>
         </div>
     )
