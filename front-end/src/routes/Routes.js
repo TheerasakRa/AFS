@@ -12,7 +12,7 @@ import Equipment from '../pages/Equipment.js';
 import ProductList from '../pages/ProductList.js';
 import Notes from '../data/notepad/Notes';
 import Searchplants from '../data/searchplants/Searchplants';
-
+import Destination from '../pages/Destination';
 
 const Router = () => {
   return (
@@ -31,6 +31,7 @@ const Router = () => {
           <Route path="/productList" element={<ProductList />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/search" element={<Searchplants />} />
+          <Route path='/addr' element={<Destination/>}/>
     
         </Routes>
       </Sidebar>

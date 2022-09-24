@@ -17,5 +17,6 @@ func main() {
     }))
     config.Connect()
     routes.DataplantsRoute(router)
+    routes.Addr(router)
     router.Run(":8050")
 }
