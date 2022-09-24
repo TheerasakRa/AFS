@@ -1,12 +1,14 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { Button,Card,CardMedia,CardContent,Typography,CardActions,Grid,Container } from "@mui/material";
+import { Button, Card, CardMedia, CardContent, Typography, CardActions, Grid, Container } from "@mui/material";
+import Plants from "../data/Plants/Plants";
 
 
 const apiURL = "http://localhost:8050/"
 
 function Introduceplants() {
     const [post, setPost] = useState([]);
+    const [searchTerm, setSearchTerm] = useState([]);
 
     useEffect(() => {
         axios.get(apiURL).then((response) => {
@@ -19,16 +21,26 @@ function Introduceplants() {
 
     return (
         <div>
-            <div className=" ">
-                <p className='flex justify-center text-4xl font-medium mt-5 mb-5'>Introduceplants</p>        
-                
-                
+            <div className="grid justify-center">
+                <p className='flex justify-center text-4xl font-medium mt-5 mb-5'>Introduceplants</p>
+            <div className="flex justify-center">
+                <input onChange={(event) => {
+                    setSearchTerm(event.target.value);
+                }}
+                    type="text" name="" id="" class="w-[500px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="Search" required />
+                </div>
                 
                 <div className="container">
                 <Container maxWidth="lg" className="mt-5 overflow-y-auto max-h-[35rem] ">
                     <Grid container spacing={2}>
-                        {post.map(e => (
-                            <Grid item xs={12} md={4} key={e.id}>
+                            {post.filter((e) => {
+                                if (searchTerm == "") {
+                                    return e
+                                } else if (e.nameplant.toLowerCase().includes(searchTerm.toLowerCase())) {
+                                    return e
+                                }
+                            }).map(e => {
+                                return <Grid item xs={12} md={4} key={e.id}>
                                 
                                 <Card sx={{ maxWidth: 345 }}>
                                     <CardMedia
@@ -55,7 +67,8 @@ function Introduceplants() {
                                 </Card>
 
                             </Grid>
-                        ))}
+                        })}
+                    
                     </Grid>
                 </Container>
 
