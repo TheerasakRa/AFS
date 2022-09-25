@@ -10,7 +10,7 @@ type Desti struct {
 	Phonnumber string `json:"phonnumber"`
 	Province   string `json:"province"`
 	District   string `json:"district"`
-	Parish     string `json:"Parish"`
-	Address    string `json:"address"`
+	Parish     string `json:"parish"`
+	Address    string `json:"address_details"`
 	PostalCode string `json:"postalcode"`
 }

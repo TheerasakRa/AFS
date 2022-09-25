@@ -10,6 +10,7 @@ function Destination() {
     const [address_details,setAddress_detail] = useState('');
     const [postal_code,setPostal_code] = useState('');
     const url ="http://localhost:8050/Addr"
+    const [post, setPost] = useState([]);
    
     function createAddr(){
         axios.post(url,{
@@ -18,7 +19,7 @@ function Destination() {
         province: province,
         district: district,
         parish: parish,
-        addressdetails: address_details,
+        address_details: address_details,
         postalcode: postal_code
       })
         .then(function (response) {
@@ -27,8 +28,19 @@ function Destination() {
       .catch(function (error) {
         console.log(error);
       });
+      window.location.reload();
     }
+
+    useEffect(() => {
+      axios.get(url).then((response) => {
+        setPost(response.data);
+        console.log(response.data)
+      });
+    }, []);
+  
+    if (!post) return "no post";
     return (
+        <div>
         <div class="mt-5 flex justify-center">
             <a href="#" class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">ที่อยู่</h5>
@@ -58,8 +70,28 @@ function Destination() {
         </Button>
                 </div>
             </a>
-
+          
         </div>
+        <div class="flex mt-5">
+            {post.map((e)=>{
+              return <div className='ml-5 block p-6 max-w-sm bg-blue-500'>
+              <p>name: {e.name}</p>
+              <p>phone_number: {e.phonnumber}</p>
+              <p>province: {e.province}</p>
+              <p>district: {e.district}</p>
+              <p>parish: {e.parish}</p>
+              <p>addressdetails: {e.address_details}</p>
+              <p>postalcode: {e.postalcode}</p>
+              </div>
+              
+              
+
+            })}
+          </div>
+        </div>
+
+
+      
     )
 
 
