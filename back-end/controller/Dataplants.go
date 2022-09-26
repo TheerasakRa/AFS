@@ -34,15 +34,15 @@ func PostDataplants(c *gin.Context) {
 	c.JSON(http.StatusOK, &new_Dataplants)
 }
 
-func DelectDataplants(c *gin.Context) {
+func DeleteDataplants(c *gin.Context) {
 	id := c.Param("id")
-	delect_dataplants := []models.Dataplants{}
-	if result := config.DB.Where("id = ?", id).Delete(&delect_dataplants); result.Error != nil {
+	delete_dataplants := []models.Dataplants{}
+	if result := config.DB.Where("id = ?", id).Delete(&delete_dataplants); result.Error != nil {
 		c.IndentedJSON(http.StatusInternalServerError,
 			gin.H{"Error": result.Error.Error()})
 		return
 	}
-	c.IndentedJSON(http.StatusNoContent, &delect_dataplants)
+	c.IndentedJSON(http.StatusNoContent, &delete_dataplants)
 }
 
 func UpdateDataplants(c *gin.Context) {

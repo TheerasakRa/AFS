@@ -8,8 +8,8 @@ const Howtouse = () => {
             <div class="text-4xl mt-5">
                 How To Use
             </div>
-            <div class="card mt-5 ml-96">
-                <div class="circle">
+            <div class="grid card mt-5 ml-96">
+                <div class="circle ml-10">
                     <div class="content">
                         <h2>AI FARM STAY</h2>
                         <p>TECHNOLOGY AND INNOVATION FARM FOR YOU</p>

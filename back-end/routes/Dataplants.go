@@ -9,7 +9,7 @@ func DataplantsRoute(router *gin.Engine) {
 	router.GET("/", controller.GetDataplants)
 	router.GET("/:id", controller.GetIdDataplants)
 	router.POST("/", controller.PostDataplants)
-	router.DELETE("/:id", controller.DelectDataplants)
+	router.DELETE("/:id", controller.DeleteDataplants)
 	router.PUT("/:id", controller.UpdateDataplants)
 
 }

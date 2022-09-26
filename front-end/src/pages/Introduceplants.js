@@ -1,8 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Button, Card, CardMedia, CardContent, Typography, CardActions, Grid, Container } from "@mui/material";
-import Plants from "../data/Plants/Plants";
-
 
 const apiURL = "http://localhost:8050/"
 

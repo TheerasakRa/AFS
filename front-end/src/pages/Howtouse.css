@@ -20,6 +20,7 @@ body {
     display: grid;
     align-items: center;
     transition: 0.5s;
+    display: grid;
 }
 
 .card .circle {
