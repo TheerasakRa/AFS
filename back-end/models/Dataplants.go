@@ -12,3 +12,5 @@ type Dataplants struct {
 	Content   string `json:"content"`
 	Image     string `json:"image"`
 }
+
+

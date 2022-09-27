@@ -16,6 +16,7 @@ func Connect() {
 	if err != nil {
 		panic(err)
 	}
+
 	db.AutoMigrate(&models.Dataplants{},&models.Note{})
 	DB = db
 	
