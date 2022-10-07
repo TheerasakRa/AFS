@@ -19,5 +19,6 @@ func main() {
 	routes.DataplantsRoute(router)
 	routes.NoteRoute(router)
 	routes.CommentRoute(router)
+	routes.Addr(router)
 	router.Run(":8050")
 }
