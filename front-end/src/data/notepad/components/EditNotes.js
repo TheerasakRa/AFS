@@ -22,7 +22,7 @@ const EditNotes = ({ setUpdate, }) => {
             .then((response) => {
                 setPost(response.data);
             })
-        alert("แก้ไข้โพสเรียบร้อย")
+        alert("แก้ไขบันทึกเรียบร้อย")
         window.location.reload();
     }
 

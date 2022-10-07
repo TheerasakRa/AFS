@@ -19,7 +19,7 @@ function PostNote(props) {
         })
             .then(() => {
                 setPost('');
-                alert("Delete Successfully")
+                alert("ลบบันทึกเรียบร้อย")
             })
         window.location.reload();
     }
