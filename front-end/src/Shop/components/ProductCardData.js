@@ -1,27 +1,16 @@
 import Img1 from '../image/ImgVoid.jpg'
 import * as React from 'react';
-import { useCart } from "react-use-cart";
-import axios from "axios"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 
 function ProductCardData(props) {
     const {iotname, price, detail } = props
-    const { addItem } = useCart();
     const [upDate, setUpdate] = useState(false);
-    const [post, setPost] = useState([]);
+    const [, setPost] = useState([]);
     const apiURL = "http://localhost:8050/shop"
     const clickedUp = () => {
         setUpdate(true)
     }
-    useEffect(() => {
-        axios.get(apiURL).then((response) => {
-            setPost(response.data);
-            console.log(response.data)
-        });
-    }, []);
-
-    if (!post) return "no post";
 
     return (
             <div class="ml-5 mt-5 flex justify-center">
