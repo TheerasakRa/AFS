@@ -20,5 +20,6 @@ func main() {
 	routes.NoteRoute(router)
 	routes.CommentRoute(router)
 	routes.Addr(router)
+	routes.ShopRoute(router)
 	router.Run(":8050")
 }

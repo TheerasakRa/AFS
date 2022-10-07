@@ -87,6 +87,7 @@ function Cardins(props) {
               <h1 className={styles.text}>{` ${title} `}</h1>
 
             </div>
+            <h1 className='mb-3'>เนื้อความ</h1>
             <h1 className="font-medium leading-none text-base tracking-wider text-gray-400 mb-5">{`${content} `}</h1>
           </div>
           <div className="flex ">
