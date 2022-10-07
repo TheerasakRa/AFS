@@ -2,6 +2,7 @@ import React from 'react';
 import Mainshop from '../Shop/components/Mainshop';
 
 
+
 const ProductList = () => {
     return (
         <main>
@@ -10,6 +11,7 @@ const ProductList = () => {
             </div>
 
             <Mainshop />
+
                    
         
         </main>

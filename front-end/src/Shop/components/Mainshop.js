@@ -39,14 +39,9 @@ function Mainshop() {
 
                 <section className={styles.containers}>
                     <div className={styles.layout}>
-                        {post.filter((e) => {
-                            if (searchTerm == "") {
-                                return e
-                            } else if (e.iotname.toLowerCase().includes(searchTerm.toLowerCase())) {
-                                return e
-                            }
-                        }).map(e => {
-                            return <ProductCardData ID={e.ID} iotname={e.iotname} price={e.price} detail={e.detail}/>
+                        {
+                        post.map(e => {
+                            return <ProductCardData iotname={e.iotname} price={e.price} detail={e.detail} e={e}/>
 
                         })}
                     </div>
