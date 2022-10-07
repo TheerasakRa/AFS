@@ -40,7 +40,7 @@ function Notes() {
             return e
           }
         }).map(e => {
-          return <PostNote ID={e.ID} title={e.title} content={e.content} />
+          return <PostNote ID={e.ID} title={e.title} content={e.content} date={e.UpdatedAt}/>
 
         })}
       </div>

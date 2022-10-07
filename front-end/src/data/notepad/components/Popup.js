@@ -15,7 +15,7 @@ function Popup() {
 
                     onClick={clicked}
                 >
-                    Create
+                    จดบันทึก
                 </div>
             </div>           
             {modalOn && < Modal setModalOn={setModalOn} />}
