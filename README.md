@@ -15,10 +15,10 @@
 
     ตัวอย่าง
 {
-    "nameplant": "ข้าว",
-    "region": "ตะวันออกเฉียงเหนือ",
-    "type": "พืชล้มลุกตระกูลหญ้า",
-    "content": "https://www.chiataigroup.com/article-detail/Rice-MsLaeiad",
-    "image": "https://bighealthyplant.com/wp-content/uploads/2021/06/dfb7774d083c87ce7d8026e51df657ed-1.png"
+    "nameplant": "ข้าว",<br>
+    "region": "ตะวันออกเฉียงเหนือ",<br>
+    "type": "พืชล้มลุกตระกูลหญ้า",<br>
+    "content": "https://www.chiataigroup.com/article-detail/Rice-MsLaeiad",<br>
+    "image": "https://bighealthyplant.com/wp-content/uploads/2021/06/dfb7774d083c87ce7d8026e51df657ed-1.png"<br>
 }
-\
+
