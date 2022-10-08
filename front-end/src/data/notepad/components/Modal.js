@@ -21,7 +21,7 @@ const Modal = ({ setModalOn }) => {
             .then((response) => {
                 setPost(response.data);
             })
-        alert("สร้างโพสต์เรียบร้อย")
+        alert("จดบันทึกเรียบร้อย")
         window.location.reload();
     }
 

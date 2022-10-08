@@ -19,6 +19,14 @@ const Howtouse = () => {
 
                 </div>
             </div>
+            <div className='bg-green-500 hover:bg-green-700 mt-10 ml-72 mr-72'>
+                <p>1.Click Signup by using 1.Gmail 2.FullName 3.Password</p>
+                <p>2.Click Login by using Gmail and Password</p>
+                <p>3.There are many functions to choose from. Ex. See the weather. See the plant guide. and More</p>
+                
+                
+
+            </div>
         </div>
     );
 };

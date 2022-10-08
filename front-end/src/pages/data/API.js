@@ -1,0 +1,1 @@
+export const Plant_Detail_URL = 'http://localhost:8050/';
