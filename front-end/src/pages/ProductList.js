@@ -1,12 +1,21 @@
 import React from 'react';
+import Mainshop from '../Shop/components/Mainshop';
+
+
 
 const ProductList = () => {
     return (
-
-        <div class="">  
+        <main>
+            <div class="">
                 <h1 className='text-4xl pt-5 '>Product List Page</h1>
-        </div>
-                
+            </div>
+
+            <Mainshop />
+
+                   
+        
+        </main>
+
 
     );
 };

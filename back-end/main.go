@@ -18,5 +18,8 @@ func main() {
 	config.Connect()
 	routes.DataplantsRoute(router)
 	routes.NoteRoute(router)
+	routes.CommentRoute(router)
+	routes.Addr(router)
+	routes.ShopRoute(router)
 	router.Run(":8050")
 }
